@@ -8,7 +8,7 @@ import { WebSocketServer } from "ws";
 import dotenv from "dotenv";
 dotenv.config();
 
-
+import { connectDB } from "./config/db.js";
 import { createSessionMiddleware } from "./config/session.js";
 
 import Submission from "./models/Submission.js";
